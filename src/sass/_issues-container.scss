@@ -1,0 +1,24 @@
+.app-issue-container {
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+        width: 77%;
+    }
+
+}
+
+.app-issue-list {
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: $issue-container-bg;  
+    box-sizing: border-box;
+    @media only screen and (min-width: 768px) {
+        overflow-y: scroll;
+    }
+    
+    .app-issue-group, & ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}

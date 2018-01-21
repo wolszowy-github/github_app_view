@@ -1,0 +1,99 @@
+<div class="app-issue-container">
+    <main class="app-issue-list">
+
+        <ul class="app-issue-group">
+            @@include('src/html/partials/date-bar.html',{
+                "date" : "19-17-2016"
+            })
+
+            <li>
+                <ul>
+        
+                    @@loop('src/html/partials/issue-bar.html',[
+                        {
+                            "issue_text" : "Page changes"
+                        },
+                        {
+                            "issue_text" : "Review of last issues"
+                        }                                            
+                    ])
+                    
+                </ul>   
+            </li>
+        </ul>
+
+
+        <ul class="app-issue-group">
+            @@include('src/html/partials/date-bar.html',{
+                "date" : "18-07-2016"
+            })
+
+            <li>
+                <ul>
+        
+                    @@loop('src/html/partials/issue-bar.html',[
+                        {
+                            "issue_text" : "Visual UI Update Review"
+                        },
+                        {
+                            "issue_text" : "Sidebar changes"
+                        }                                            
+                    ])
+                    
+                </ul>   
+            </li>
+        </ul>
+
+
+        <ul class="app-issue-group">
+            @@include('src/html/partials/date-bar.html',{
+                "date" : "15-07-2016"
+            })
+
+            <li>
+                <ul>
+        
+                    @@loop('src/html/partials/issue-bar.html',[
+                        {
+                            "issue_text" : "Crash update"
+                        },
+                        {
+                            "issue_text" : "Page visual UI Update Review"
+                        },
+                        {
+                            "issue_text" : "Sidebar update"
+                        }                                                
+                    ])
+                    
+                </ul>   
+            </li>
+        </ul>
+
+
+        
+        <ul class="app-issue-group">
+            @@include('src/html/partials/date-bar.html',{
+                "date" : "14-07-2016"
+            })
+
+            <li>
+                <ul>
+        
+                    @@loop('src/html/partials/issue-bar.html',[
+                        {
+                            "issue_text" : "Crash issue"
+                        },
+                        {
+                            "issue_text" : "Visual update & Crash resolve"
+                        },
+                        {
+                            "issue_text" : "Sidebar update"
+                        }                                                
+                    ])
+                    
+                </ul>   
+            </li>
+        </ul>
+
+    </main>
+</div>

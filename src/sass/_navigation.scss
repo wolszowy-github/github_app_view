@@ -1,0 +1,70 @@
+.app-navigation {
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            color: $sidebar-font;
+            cursor: pointer;
+            
+            .app-navi-item {
+                text-decoration: none;
+                color: $sidebar-font;
+                padding: 16px;
+                display: flex;
+                justify-content: space-between;
+                background-color: transparent;
+                transition: background-color .3s;
+
+                &-text {
+                    padding-left: 10px;
+                }
+ 
+                &-icon, &-text, &-notify {
+                    transition: color .3s;
+                }
+
+                &-icon {
+                    display: inline-block;
+                    transform: scale(1) rotate(0);
+                    transition: transform .3s;
+                }  
+
+                &-notify {
+                    color: $navi-notification-num;
+                }
+
+
+            }
+
+            &.active {
+
+               & .app-navi-item {
+                   background-color: $navi-active;
+               }
+            }
+            
+            &:hover {
+                .app-navi-item {
+            
+                    background-color: darken($navi-active, 15%);
+
+                    &-icon, &-text {
+                        color : $navi-notification-num;
+                    }
+
+                    &-icon {
+                        transform: scale(1.2) rotate(20deg); 
+                    }
+
+                    &-notify {
+                        color: $sidebar-font;
+                    }
+                }
+
+            }
+        }
+    }
+}

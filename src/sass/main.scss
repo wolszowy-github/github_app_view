@@ -1,0 +1,17 @@
+@import "normalize/normalize";
+@import 'fonts';
+@import 'icons';
+
+//app styles
+@import 'variables';
+@import 'base';
+@import 'app';
+@import 'sidebar';
+@import 'controls';
+@import 'dots';
+@import 'navigation';
+
+//issues cointaier styles
+@import 'issues-container';
+@import 'date-bar';
+@import 'issue-bar';

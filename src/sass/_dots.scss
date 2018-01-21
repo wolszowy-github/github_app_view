@@ -1,0 +1,20 @@
+.app-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &__red {
+        background-color: $dot-red;
+    }
+
+    &__green {
+        background-color: $dot-green;
+    }
+
+    &__yellow {
+        background-color: $dot-yellow;
+    }
+}

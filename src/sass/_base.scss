@@ -1,0 +1,14 @@
+html {
+    font-family: 'robotoregular', Arial;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-wrapper {
+    background: url('../img/main-bg.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}

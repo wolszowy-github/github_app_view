@@ -1,0 +1,7 @@
+.app-issue-date {
+    & time{
+        font-size: 12px;
+        color: $navi-notification-num;
+    }
+    margin-bottom: 10px;
+}
